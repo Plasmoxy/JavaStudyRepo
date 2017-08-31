@@ -11,28 +11,28 @@ public class Monster {
 	private int yPosition = 0;
 	private boolean alive = true;
 	
-	String name = "Big Monster";
+	public String name = "Big Monster";
 	
-	int getAttack() {
+	public int getAttack() {
 		return attack;
 	}
 	
-	int getMovement() {
+	public int getMovement() {
 		return movement;
 	}
 	
-	int getHealth() {
+	public int getHealth() {
 		return health;
 	}
 	
-	void setHealth(int decreaseHealth) {
+	public void setHealth(int decreaseHealth) {
 		health = health - decreaseHealth;
 		if ( health <= 0) {
 			alive = false;
 		}
 	}
 	
-	void setHealth(double decreaseHealth) {
+	public void setHealth(double decreaseHealth) {
 		int intDecreaseHealth = (int) decreaseHealth;
 		health = health - intDecreaseHealth;
 		if (health <= 0) {
