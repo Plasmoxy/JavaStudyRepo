@@ -59,7 +59,7 @@ public class Main {
 			if(m.isAlive())
 			{
 				int arrayItemIndex = ArrayUtils.indexOf(monsters, m);
-				m.moveMonster(mosters, arrayItemIndex);
+				//m.moveMonster(mosters, arrayItemIndex);
 			}
 		}
 	}
