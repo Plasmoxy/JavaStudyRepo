@@ -77,6 +77,11 @@ public class Monster {
 		return alive;
 	}
 	
+	public void moveMonster(Monster[] monsters, int arrayItemIndex)
+	{
+		boolean isSpaceOpen = true;
+	}
+	
 	
 
 }

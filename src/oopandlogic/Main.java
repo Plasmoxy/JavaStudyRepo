@@ -8,6 +8,8 @@ public class Main {
 	public static char[][] battleBoard = new char[10][10];
 	
 	public static int numOfMonsters = 0;
+	public static int maxXBoardSpace = battleBoard.length - 1;
+	public static int maxYBoardSpace = battleBoard[0].length - 1;
 	
 	public static void buildBattleBoard()
 	{
@@ -39,7 +41,6 @@ public class Main {
 	
 	public static void main(String[] args)
 	{
-		
 		buildBattleBoard();
 		
 		char[][] tempBattleBoard = new char[10][10];
@@ -53,6 +54,14 @@ public class Main {
 		
 		redrawBoard();
 		
+		for (Monster m : monsters)
+		{
+			if(m.isAlive())
+			{
+				int arrayItemIndex = ArrayUtils.indexOf(monsters, m);
+				m.moveMonster(mosters, arrayItemIndex);
+			}
+		}
 	}
 
 }
