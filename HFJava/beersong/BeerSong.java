@@ -1,5 +1,5 @@
 package beersong;
 
-public class BeerSong {
+public class BeerSong {//
 
 }
