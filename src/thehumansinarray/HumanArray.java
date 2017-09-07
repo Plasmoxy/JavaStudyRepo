@@ -30,9 +30,6 @@ public class HumanArray
 		
 		System.out.println();
 		
-		classnm = null;
-		agestr = null;
-		System.gc(); // dereference classnm and agestr just because we can and its fun xDDDD
 	}
 	
 	public static void main(String[] args)

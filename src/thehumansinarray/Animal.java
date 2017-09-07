@@ -2,8 +2,6 @@ package thehumansinarray;
 
 public class Animal
 implements NonRetardedEntity
-// we'll need this to make animals subclasses so kinda using the inheritance and shit
-// also Animal object doesn't make any sense so its abstract class
 {
 	private String name;
 	private int age;
